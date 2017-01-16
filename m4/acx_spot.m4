@@ -24,11 +24,11 @@ for f in $CHECK_DIR; do
     if test -f "${f}/include/spot/tl/parse.hh" -a -f "${f}/include/bddx.h"; then
         
         # check if the version of Spot is correct
-        version="2.2.1"          
+        version="2."          
         AC_MSG_NOTICE([found Spot installation at ${f}])
         AC_MSG_CHECKING([for Spot version == $version])
         spot_conf="${f}/include/spot/misc/_config.h"
-        spot_v="SPOT_VERSION \"$version\""
+        spot_v="SPOT_VERSION \"$version"
         version_check=""
 
         # check if spot_conf can be found 
