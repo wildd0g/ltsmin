@@ -361,7 +361,7 @@ main(int argc, char *argv[])
     HREaddOptions(options,"Vector set test\n\nOptions");
     HREinitStart(&argc,&argv,0,0,NULL,NULL);
 
-    vset_implementation_t vset_impl = VSET_IMPL_AUTOSELECT;
+    vset_implementation_t vset_impl = VSET_ListDD;
 
     domain = vdom_create_domain(dom_size, vset_impl);
 

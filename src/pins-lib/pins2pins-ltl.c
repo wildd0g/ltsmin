@@ -645,7 +645,7 @@ ltl_exit (model_t model)
     /* Only the first worker performs the destruction,
      * because the spot automaton is a shared pointer.
      */
-    ltsmin_hoa_destroy();
+//    ltsmin_hoa_destroy();
 }
 
 /*
